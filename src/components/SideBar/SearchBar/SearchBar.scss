@@ -1,0 +1,10 @@
+@import "src/scss/index";
+.search-bar-input{
+  margin: 20px;
+  height: 40px;
+  width: 80%;
+  border-radius: 3px;
+  &:hover, &:focus, &:active{
+    border: 1px solid $lightBrown;
+  }
+}
