@@ -1,0 +1,25 @@
+@mixin iconStyle(){
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.title-div{
+  display: flex;
+  align-items: center;
+    .edit-icon{
+      @include iconStyle;
+      margin-left: 40px;
+    }
+    .delete-icon{
+      @include iconStyle;
+      margin-left: 23px;
+    }
+  .preview-title{
+    font-size: 32px;
+  }
+}
+.markdown-preview{
+  word-break: break-word;
+  font-size: 1rem;
+  line-height: 2rem;
+}

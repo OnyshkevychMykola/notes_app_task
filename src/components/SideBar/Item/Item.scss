@@ -1,0 +1,43 @@
+@import "src/scss/index";
+
+
+@mixin flexColumn(){
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin standartText($weightParam){
+  color: $darkBrown;
+  font-weight: $weightParam;
+}
+.sidebar-note {
+  padding: 25px;
+  cursor: pointer;
+  .item-content {
+    @include flexColumn;
+
+    .title-text {
+      @include standartText(bold);
+      font-size: $titleFontSize;
+    }
+
+    .body-text {
+      @include standartText(300);
+      font-size: $bodyFontSize;
+    }
+
+    .date-text {
+      color: $lightGrey;
+      line-height: 16px;
+      font-size: $dateFontSize;
+    }
+  }
+  &:active, &:hover{
+    background: $white;
+    .item-content {
+      .date-text {
+        color: $darkBrown;
+      }
+    }
+  }
+}
