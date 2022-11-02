@@ -25,7 +25,7 @@ const Title = () => {
                 <h1 className="preview-title">{textTitleRender()}</h1>
                 <EditOutlined className='icon edit-icon' onClick={onFooterChange}/>
                 <DeleteOutlined  className='icon delete-icon' onClick={showModal}/>
-                <CheckOutlined   className='icon delete-icon' onClick={changeStyle}/>
+                <CheckOutlined className='icon delete-icon' onClick={changeStyle}/>
             </div>
             <ReactMarkdown className="markdown-preview">
                 {activeNote.body}
