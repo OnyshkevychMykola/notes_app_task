@@ -1,0 +1,29 @@
+@import "src/scss/index";
+.modal-title{
+  line-height: 8px;
+  font-size: 20px;
+  .bold-text{
+    color: $lightBrown;
+    font-weight: 600 ;
+  }
+  .thin-text{
+    color: #000;
+  }
+}
+
+.ant-btn-default{
+  color: $darkBrown !important;
+  border-color: $darkBrown !important;
+  &:hover{
+    background: $white !important;
+  }
+}
+
+.ant-btn-primary{
+  background: $darkBrown !important;
+  border-color: $darkBrown !important;
+  &:hover{
+    background: $darkOrange !important;
+    border-color: $darkOrange !important;
+  }
+}

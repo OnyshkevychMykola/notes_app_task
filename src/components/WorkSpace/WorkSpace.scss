@@ -1,0 +1,23 @@
+@import "src/scss/index";
+
+.sidebar-btn {
+  position: absolute;
+  right: 6%;
+  bottom: 6%;
+  font-size: 72px;
+  color: $lightBrown;
+  &:hover, &:active{
+    color: $darkBrown;
+  }
+}
+.active-note {
+  height: 100vh;
+}
+
+.no-active-note {
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+  font-size: 2rem;
+  color: #999;
+}
